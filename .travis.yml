@@ -1,0 +1,6 @@
+nguage: csharp
+solution: "./PrimeHolding.Tools.sln"
+install:
+        - travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./PrimeHolding.Tools.sln
+script:
+        - xbuild ./PrimeHolding.Tools.sln
