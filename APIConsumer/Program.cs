@@ -156,9 +156,6 @@
                     case "h":
                         Usage();
                         return 0;
-    #pragma warning disable CS0162 // Unreachable code detected
-                        break;
-    #pragma warning restore CS0162 // Unreachable code detected
 
                     case "convert":
                     case "c":
@@ -173,9 +170,6 @@
                     default:
                         Usage();
                         return 1;
-    #pragma warning disable CS0162 // Unreachable code detected
-                        break;
-    #pragma warning restore CS0162 // Unreachable code detected
                 }
             }
             catch (FileNotFoundException ex)

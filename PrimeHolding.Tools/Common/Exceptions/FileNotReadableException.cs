@@ -11,7 +11,6 @@ namespace PrimeHolding.Tools.Common.Exceptions
 {
     using System;
 
-#pragma warning disable CA1200
     ///////////////////////////////////////////////////////////////////////////////////////////////
     /// <summary>
     ///     (Serializable) exception for signalling file not readable errors. This class cannot be
@@ -20,7 +19,6 @@ namespace PrimeHolding.Tools.Common.Exceptions
     ///
     /// <seealso cref="T:PrimeHolding.Tools.Common.Exceptions.GenericException"/>
     ///////////////////////////////////////////////////////////////////////////////////////////////
-#pragma warning restore CA1200
 
     [Serializable]
     public sealed class FileNotReadableException : GenericException

@@ -136,16 +136,11 @@ namespace PrimeHolding.Tools
                     break;
 
                 case "png":
-#pragma warning disable SA1101
                     converter = new ConverterContext(new Png());
-#pragma warning restore SA1101
                     break;
 
                 default:
-#pragma warning disable CS0162 // Unreachable code detected
                     throw new ImageFormatException();
-                    break;
-#pragma warning restore CS0162 // Unreachable code detected
             }
             
             // Check source file for read access
@@ -192,9 +187,6 @@ namespace PrimeHolding.Tools
 
                 default:
                     throw new InvalidParameterException();
-#pragma warning disable CS0162 // Unreachable code detected
-                    break;
-#pragma warning restore CS0162 // Unreachable code detected
             }
 
             // Check source file for read access

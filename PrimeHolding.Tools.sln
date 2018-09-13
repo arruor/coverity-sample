@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeHolding.Tools", "PrimeHolding.Tools\PrimeHolding.Tools.csproj", "{D83F55A6-624C-48F0-BAC0-15605BAEC304}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIConsumer", "APIConsumer\APIConsumer.csproj", "{9C6748E3-A832-4809-AF21-D5E869A2F46F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D83F55A6-624C-48F0-BAC0-15605BAEC304} = {D83F55A6-624C-48F0-BAC0-15605BAEC304}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
