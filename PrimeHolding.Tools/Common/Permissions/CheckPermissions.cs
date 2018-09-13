@@ -377,7 +377,10 @@ namespace PrimeHolding.Tools.Common.Permissions
         /// <returns>   The windows identity. </returns>
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        public WindowsIdentity GetWindowsIdentity() => principal;
+        public WindowsIdentity GetWindowsIdentity()
+        {
+            return principal;
+        }
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
         /// <summary>   Gets the path. </summary>
